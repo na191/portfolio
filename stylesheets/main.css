@@ -2,8 +2,78 @@ body {
   background-image: url("Cream and Brown Simple Creative Portfolio Presentation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  background-position: center top;  
   background-color: #ffeded;
 
-
+  
 }
   
+.title { 
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #fac288;
+  border-radius: 15px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #e2e4d1;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  
+  padding-left: 10%;
+  padding-top: 20%;
+}
+
+
+
+.loader {
+  width: fit-content;
+  font-size: 40px;
+  font-family: system-ui,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  background: conic-gradient(#000 0 0) 0/0% 100% no-repeat text;
+  animation: l1 1s linear infinite;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.loader:before {
+  content: "Loading";
+}
+@keyframes l1 {
+  to{background-size: 120% 100%}
+}
