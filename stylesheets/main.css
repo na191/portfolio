@@ -5,7 +5,7 @@ body {
 
   background-position: center top;  
   background-color: #ffeded;
-
+  font-family: fantasy;
   
 }
   
@@ -23,11 +23,13 @@ body {
   float: left;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 13px 14px;
   text-decoration: none;
   font-size: 17px;
   background-color: #fac288;
   border-radius: 15px;
+  margin: 10px;
+
 }
 
 /* Change the color of links on hover */
@@ -52,28 +54,15 @@ body {
 
 
 
-.loader {
-  width: fit-content;
-  font-size: 40px;
-  font-family: system-ui,sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #0000;
-  -webkit-text-stroke: 1px #000;
-  background: conic-gradient(#000 0 0) 0/0% 100% no-repeat text;
-  animation: l1 1s linear infinite;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  
-
+.mainpage {
+	display: block;
+	width: 100%;
+	max-width: 50em;
+	margin: auto;
+	border: 0;
+	animation: fadeIn 5s forwards;
 }
-.loader:before {
-  content: "Loading";
-}
-@keyframes l1 {
-  to{background-size: 120% 100%}
-}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
